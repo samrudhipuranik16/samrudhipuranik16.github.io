@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            display: flex;
+            justify-content: center;
+        }
+        .box{
+            padding: 20px;
+            border: 1px solid gray;
+            width:320px ;
+            border-radius: 10px;
+            box-shadow: 4px;
+            align-content: center;
+        }
+        .abc{
+            padding: 10px;
+            border-radius: 10px;
+            width: 90%;
+            height: 15px;
+            border-color: gray;
+            margin: 10px;
+        }
+        .but{
+            background-color: blue;
+            color: white;
+            height: 40px;
+            width: 310px;
+            border-radius: 10px;
+            align-items: center;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+    </style>
+    <script>
+        function check(){
+            let usern=document.getElementById("n").value
+            let idi=document.getElementById("p").value
+            if(usern=="john@gmail.com" )
+                document.write("Welcome John")
+            if(usern=="" || idi=="")
+                  document.write("Username or Password is blank,it can not be blank")
+            else
+                document.write("Access Denied")
+        }
+    </script>
+</head>
+<body>
+    <div id="main">
+        <div class="box">
+        <p><input class="abc" type="text" id="n" placeholder="Email address or phone number"></p>
+      <p> <input class="abc" type="password" id="p" placeholder="password"></p>
+       <p> <button class="but" onclick="check()">log in</button></p>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+<!-- *used for form tag
+   e.prevenDefault() help with just validation but not submission of the form -->

@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    let users=[]
+    function del(){
+        
+    }
+    function f1(){
+    let n=document.getElementById("nm").value
+    let e=document.getElementById("email").value
+    let p=document.getElementById("pass").value
+    let d=document.getElementById("dob").value
+    let data=document.getElementById("data");
+    let user={
+        name:n,
+        email:e,
+        pass:p,
+        dob:d
+    }
+    users.push(user)
+    let len=users.length
+    let s=""
+    for(let i=0;i<len;i++){
+        s += `<div>${users[i].name}, ${users[i].email}, ${users[i].pass}, ${users[i].dob}<button onclick='del(${i})'>Delete</button><br></div>`;
+    }
+    data.innerHTML=s
+}
+    </script>  
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            flex-direction: column;
+            text-align: center;
+        }
+        .box{
+           
+            border:2px solid rgb(89, 55, 94);
+            padding:20px;
+            width:400px;
+            border-radius: 20px;
+        }
+        input{
+            background-color: rgb(251, 244, 235);
+            padding:20px;
+            width:90%;
+        }
+        button{
+            background-color: rgb(72, 19, 92);
+            width:30%;
+            height: 10px;
+            padding:15px;
+            border-radius: 10px;
+            color: white;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>SIGN UP</h2>
+    <input type="text" required placeholder="enter name" id="nm" autofocus><br></br>
+    <input type="text" required placeholder="enter email adress" id="email" autofocus><br></br>
+    <input type="password" required placeholder="enter password" id="pass" autofocus><br></br>
+    <input type="date" required placeholder="enter date of birth" id="dob" autofocus><br></br>
+   <!-- <input type="checkbox" id="chkremember"><label for="chkremember">Remember me</label> -->
+    <button style="width: 100%;" onclick="f1()">REGISTER</button>
+    <p><div id="data"></div></p>
+    </div>
+    </div>
+</body>
+</html>
