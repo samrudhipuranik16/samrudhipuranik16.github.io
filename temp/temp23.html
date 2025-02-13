@@ -17,6 +17,7 @@
         // score["maths"] = score["maths"] + 2
         // console.log(score);
         cart[id] = 1;
+        
         showCart();
       };
       const increment = (id) => {
@@ -24,9 +25,21 @@
         showCart()
       };
       const decrement = (id) => {
-        cart[id] = cart[id] - 1;
+        cart[id] -=1;
+        cart[id]<1 && delete cart[id]
+        console.log(cart)
         showCart()
       };
+      const showtot = () => {
+       // divtotal.innerHTML="Order Value";
+         //cart.reduce((sum,value.price)=>sum+value.price)
+         let total=products.reduce((sum,value)=>{
+          //if(cart[value.id]){
+            return sum+value.price*(cart[value.id]||0)
+          //}
+         },0)
+         divtotal.innerHTML = ` Orser Value=${total}`
+      }
       const showCart = () => {
         let str = "";
         products.map((value) => {
@@ -40,8 +53,13 @@
             `;
           }
         });
+        showtot()
         divCart.innerHTML = str;
+        let c= Object.keys(cart).length
+        items.innerHTML=c
+        showtot()
       };
+      
       const showProducts = () => {
         let str = "";
         products.map((value) => {
@@ -55,10 +73,12 @@
   </head>
   <body onload="showProducts()">
     <h1>My Store</h1>
+    <h3 >Cart[<span id="items"></span>]</h3>
     <hr />
     <h3>Products</h3>
     <div id="divProducts"></div>
     <h3>My Cart</h3>
     <div id="divCart"></div>
+    <div id="divtotal"></div>
   </body>
 </html>
