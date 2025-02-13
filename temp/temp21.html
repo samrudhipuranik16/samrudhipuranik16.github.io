@@ -1,57 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-   <script>
-    //  function calc(a,b){
-    //       return a + b
-    //  }
-    //  let result=calc(2,3);
-
-    const calc = (a,b) => {  //Arrow function  in this we store entire function in a var called cal(in this case)
-          return a + b
-     }
-     let result=calc(2,3);
-
-
-     const prod=[ "apple","orange","mango"]
-    //  for(let i=0;i<prod.length;i++){
-    //     document.write(prod[i])
-    //  }
-      //prod.forEach(value => console.log(value))                                      this code will be exectuted for each element in the array  
-    //  prod.forEach((value)=>{
-    //     console.log("Hello world")
-    //     console.log(value)
-    //  })
-    //  prod.forEach((value,index,array)=>{
-    //     console.log(value,index,array)                        
-    //  })
-
-
-
-
-
-
-
-
-     const num=[12,23,34,45]
-    //  const num1=num.map(value =>{
-    //         return value + 5           // adds +5 to num and stores new values in num1
-    //  })
-     console.log(num1)
-
-
-     const num2=num.map((value)=> value +5);     //works same as of num1
-     const num3=num.filter((value)=>value>10)    // stores value if condition is true
-
-    prod.map((value,index,arr)=>{
-        console.log(value)
-    })
-
-   </script> 
-</body>
+  </head>
+  <body>
+    <script>
+      const greet = () => {
+        console.log("Hello World");
+      };
+      const a = greet;
+      a();
+      const calc = (a, b) => {
+        return a + b;
+      };
+      let result = calc(5, 4);
+      console.log(result);
+    </script>
+  </body>
 </html>
