@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Temp 2</h1>
+    <h2>Forms</h2>
+    <h4>Login Form</h4>
+    <form>
+        <p>
+            <!-- <input type="text" required value="John" readonly> -->
+            <!-- <input type="text" required value="John" disabled>         -->
+            <!-- <input type="text" required value="John" maxlength="10" size="5"> -->
+            <input type="text" required placeholder="Enter Email" autofocus>
+        </p>
+        <p>
+            <input type="password" required placeholder="Enter password">
+
+        </p>
+        <p>
+            <input type="checkbox" id="chkRemember"><label for="chkRemember">Remember me</label>
+        </p>
+        <button>Submit</button>
+    </form>
+    <hr>
+    <h4>Signup Form</h4>
+    <form>
+        <fieldset>
+            <legend>Personal Information:</legend>
+            <p>
+                <input type="text" placeholder="Enter Name" required>
+            </p>
+            <p>
+                <input type="text" placeholder="Enter Email">
+            </p>
+            <p>
+                <input type="number" placeholder="Enter Age">
+            </p>
+            <p><textarea rows="4" cols="80"></textarea></p>
+            <p>
+                <input list="city">
+                
+                <datalist id="city">
+                    <option>Hyderabad</option>
+                    <option>NYC</option>
+                    <option>Bengaluru</option>
+                    <option>Delhi</option>
+                    <option>Jacksonville</option>
+                    <option>Cincinatti</option>
+                </datalist>
+            </p>
+            <p>
+                State:<br>
+                <select>
+                    <optgroup label="India">
+                    <option>Telangana</option>
+                    <option>Andra Pradesh</option>
+                    <option>Kerala</option>
+                </optgroup>
+                <optgroup label="US">
+                    <option>New York</option>
+                    <option>Ohio</option>
+                    <option>Florida</option>
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Educational Information:</legend>
+            <p>
+                Skills:<br>
+                <input type="checkbox"><label>HTML</label><br>
+                <input type="checkbox"><label>CSS</label><br>
+                <input type="checkbox"><label>Javascript</label><br>
+            </p>
+            <p>
+                Qualification:<br>
+                <input type="radio" name="Qualification"><label>BE</label><br>
+                <input type="radio" name="Qualification"><label>BTech</label><br>
+            </p>
+        </fieldset>
+        
+        <button>Submit</button>
+         <!-- <input type="submit"> -->
+          <!-- <input type="image" src="assets/images/ball.png"> -->
+        <!-- <input type="button" value="Submit"> -->
+        <input type="reset">
+    </form>
+
+    <hr>
+    <form>
+        <p><input type="email"></input></p>
+        <p> <input type="date"/></p>
+        <p> <input type="time"/></p>
+        <p> <input type="datetime-local"/></p>
+        <p> <input type="month"/></p>
+        <p> <input type="week"/></p>
+        <p> <input type="color"/></p>
+        <p> <input type="file"/></p>
+        <p> <input type="url"/></p>
+        <button>Submit</button>
+    </form>
+    <hr>
+    <table border="1">
+        <colgroup>
+        <col span="2" style="background-color: blue;">
+       <col style="background-color: teal;">  
+      </colgroup>
+        <tr>
+          <th>Name</th>
+          <th>City</th>
+          <th>Score</th>
+        </tr>
+  
+        <tr>
+          <td>John</td>
+          <td>Jax</td>
+          <td>34</td>
+        </tr>
+        <tr>
+          <td>Mike</td>
+          <td>Jax</td>
+          <td>56</td>
+        </tr>
+  
+        <tr>
+          <td colspan="2">Total</td>
+          <td>90</td>
+        </tr>
+      </table>
+</body>
+</html>
