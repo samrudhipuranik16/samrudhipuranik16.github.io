@@ -23,6 +23,14 @@
         console.log(cart);
         showCart();
       };
+      const inc = (id)=>{
+        cart[id]+=1;
+        showCart()
+      }
+      const dec = (id)=>{
+        cart[id]-=1;
+        showCart()
+      }
 
       const showCart = () => {
         let str = "";
