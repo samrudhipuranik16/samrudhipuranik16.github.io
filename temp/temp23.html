@@ -69,16 +69,26 @@
         });
         divProducts.innerHTML = str;
       };
+      const displaycart=()=>{
+        //showCart();
+        divblock.style.display="block"
+      }
+      const hidecart=()=>{
+        divblock.style.display="none"
+      }
     </script>
   </head>
   <body onload="showProducts()">
     <h1>My Store</h1>
-    <h3 >Cart[<span id="items"></span>]</h3>
+    <h3 onclick="displaycart()" >Cart[<span id="items"></span>]</h3>
     <hr />
+    <h4 onclick="hidecart()">Hide Cart</h4>
     <h3>Products</h3>
     <div id="divProducts"></div>
-    <h3>My Cart</h3>
-    <div id="divCart"></div>
-    <div id="divtotal"></div>
+    <div id="divblock" style="display: none;">
+         <h3>My Cart</h3>
+         <div id="divCart"></div>
+         <div id="divtotal"></div>
+  </div>
   </body>
 </html>
