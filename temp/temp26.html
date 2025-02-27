@@ -11,13 +11,15 @@
     </div>
     <script>
         ball.style.position="absolute";
-        ball.style.top="50px";
-        ball.style.left="50px"
-        // function f1(){
+        // ball.style.top="50px";
+        // ball.style.left="50px"
+        let t=0
+        function f1(){
+            t++;
+           ball.style.top = t+"px";
+        }
 
-        // }
-
-        // setTimeout(f1,10);
+        setTimeout(f1,10000);
     </script>
 </body>
 </html>

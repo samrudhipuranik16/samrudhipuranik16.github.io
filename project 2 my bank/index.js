@@ -1,13 +1,19 @@
 let users = [];
-let user = {}
-// let useremail = "";
-// let username = "";
-// let currBalance = 0;
+let user = {};
 document.write("<div id=root></div>");
+function toggle(color) {
+  if (color == "dark") {
+    document.body.style.background = "black";
+    document.body.style.color = "white";
+  } else {
+    document.body.style.background = "white";
+    document.body.style.color = "black";
+  }
+}
 function showUser() {
   if (document.getElementById("type").value == "3") {
-    console.log("Transfer")
-    selUser.style.display = 'block'
+    console.log("Transfer");
+    selUser.style.display = "block";
     let str = "<option value=0>--Select--</option>";
     for (let i = 0; i < users.length; i++) {
       if (users[i].email != user.email) {
@@ -15,9 +21,8 @@ function showUser() {
       }
     }
     selUser.innerHTML = str;
-  }
-  else {
-    selUser.style.display = "none"
+  } else {
+    selUser.style.display = "none";
   }
 }
 function saveData() {
@@ -26,7 +31,7 @@ function saveData() {
   for (let i = 0; i < users.length; i++) {
     if (users[i].email == user.email) {
       if (type == "1") {
-        console.log("testing")
+        console.log("testing");
         users[i].balance += amount;
         spBalance.innerHTML = users[i].balance;
       } else if (type == "2") {
@@ -92,7 +97,7 @@ function chkUser() {
       // useremail = email;
       // username = users[i].name;
       // currBalance = users[i].balance;
-      user = users[i]
+      user = users[i];
       home();
       break;
     } else {
