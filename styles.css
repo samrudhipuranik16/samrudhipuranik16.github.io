@@ -10,7 +10,7 @@
   }
 
   .header-row {
-    background-color: orange;
+    background-color: #043927;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +38,8 @@
 
   .row {
     padding: 100px;
-    height: 75%;
+    height: 70%;
+    background-color: lightgoldenrodyellow;
   }
 
   .row .box {
@@ -55,7 +56,7 @@
   }
 
   button {
-    background-color: teal;
+    background-color: pink;
     padding: 10px;
     color: white;
     border: none;
