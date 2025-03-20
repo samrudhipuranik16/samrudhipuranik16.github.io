@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 1500);
 });
 document.getElementById("gitbttn1").onclick = function() {
-    window.location.href = "https://github.com/samrudhipuranik16/samrudhipuranik16.github.io/project1onlinestore.html";
+    window.location.href = "https://samrudhipuranik16.github.io/samrudhipuranik16.github.io/project1onlinestore/index.html";
 };
 document.getElementById("gitbttn2").onclick = function() {
     window.location.href = "https://samrudhipuranik16.github.io/project2mybank/index.html";
