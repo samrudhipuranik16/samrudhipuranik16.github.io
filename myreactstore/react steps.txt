@@ -1,0 +1,15 @@
+///for old react not in use tho
+npx create react-app appname
+npm start
+
+
+
+
+
+/// for vite
+npm create vite@latest appname    // to create
+cd appname 
+npm install
+code .   // to open project in vs code
+go to terminal in vs code
+npm run dev
