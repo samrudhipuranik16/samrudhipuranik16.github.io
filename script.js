@@ -22,10 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 1500);
 });
 document.getElementById("gitbttn1").onclick = function() {
-    window.location.href = "https://samrudhipuranik16.github.io/samrudhipuranik16.github.io/project1onlinestore/index.html";
+    window.location.href = "https://samrudhipuranik16.github.io/samrudhipuranik16.github.io/project1onlinestore/";
 };
 document.getElementById("gitbttn2").onclick = function() {
-    window.location.href = "https://samrudhipuranik16.github.io/project2mybank/index.html";
+    window.location.href = "https://samrudhipuranik16.github.io/project2mybank/";
 };
 document.getElementById("gitbttn3").onclick = function() {
     window.location.href = "https://samrudhipuranik16.github.io/mystoreproject3/index.html";
